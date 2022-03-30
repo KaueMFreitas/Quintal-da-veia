@@ -20,6 +20,7 @@ nav {
     display: flex;
 
     box-shadow: inset 0px -10px 20px -5px rgba(0, 0, 0, 0.308);
+
     position: -webkit-sticky;
     position: sticky;
     top: 0;

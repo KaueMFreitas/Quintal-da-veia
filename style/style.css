@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --contorno: 1px 0px black, 0px 1px black, -1px 0px black, 0px -1px black;
+}
+
 body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -21,15 +25,15 @@ header {
 
     box-shadow: inset 0px -10px 10px -5px rgba(0, 0, 0, 0.589);
 
-    height: 35vmax;
+    height: 60vh;
 }
 
 header img {
     display: block;
 
     margin: auto;
-    padding-top: 5vw;
-    width: 30vmax;
+    padding-top: 3vw;
+    width: 60vh;
 }
 
 section {
@@ -100,22 +104,43 @@ section {
 }
 
 #Menu a {
-    font-size: 1.3em;
+    font-size: 1.4em;
+    padding: 10px;
     background-color: white;
     border: 1px solid black;
     border-radius: 15px;
     color: black;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #map {
-    align-items: center;
-    height: 300px;
+    display: flex;
+    background-color: black;
+
+    list-style: none;
+}
+.google {
+    height: 0px;
 }
 
-iframe.map {
-    height: 200px;
-    width: 600px;
+.bloco-map {
+    float: left;
+    width: 39.5vw;
+    height: 500px;
+    background-color: rgb(182, 182, 182);
+    color: white;
+}
+.bloco-map h1 {
+    text-align: center;
+    text-shadow: var(--contorno);
+}
+
+.google-map {
+    padding-top: 0px;
+    float: right;
+    width: 60%;
+    height: 500px;
 }
 
 footer {
@@ -135,8 +160,16 @@ footer {
     width: 20vw;
 }
 
-@media only screen and (min-width: 500px) 
+@media only screen and (max-width: 500px) 
 {
+    header {
+        height: 30vh;
+    }
+    header > img {
+        padding-top: 4vw;
+        width: 30vh;
+    }
+
     #Autalizações {
         height: 40vh;
     }
