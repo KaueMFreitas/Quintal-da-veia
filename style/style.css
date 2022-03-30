@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* {
+    width: 100%;
+    margin: 0px;
+}
+
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipO0oD8Tst4qes-CR-KBAoHSEBCu3pBt-zR8zCl9=s1600-w400);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 35vw;
+}
+
+img#logo {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5vw;
+    width: 30vmax;
+}
+
+nav {
+    background-color: black;
+
+    height: 60px;
+}
