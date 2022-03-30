@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 * {
-    width: 100%;
+    padding: 0px;
     margin: 0px;
+
+    box-sizing: border-box;
 }
 
 body, html {
@@ -12,13 +14,17 @@ body, html {
 header {
     background-image: url(https://lh3.googleusercontent.com/p/AF1QipO0oD8Tst4qes-CR-KBAoHSEBCu3pBt-zR8zCl9=s1600-w400);
 
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
-    height: 35vw;
+    box-shadow: inset 0px -10px 10px -5px rgba(0, 0, 0, 0.589);
+
+    height: 35vmax;
 }
 
-img#logo {
+header img {
     display: block;
 
     margin-left: auto;
@@ -27,8 +33,102 @@ img#logo {
     width: 30vmax;
 }
 
-nav {
+section {
+    height: 80vh;
+}
+
+.container {
+    display: flex;
+
+    flex-wrap: wrap;
+    
+    padding: 10px 0px 10px;
+}
+
+#Autalizações {
+    border-bottom: 1px solid black;
+    background-color: bisque;
+
+    padding: 40px 10px 30px 0px;
+}
+
+#Autalizações h1, h2 {
+    margin-top: 5vw;
+    text-align: center;
+}
+.bloco {
+    width: 300px;
+    height: auto;
+    
+    margin: 0px auto;
+
+    list-style: none;
+}
+
+.bloco h2 {
+    font-size: 1.2em;
+    margin: 20px 0px;
+}
+
+.bloco p {
+    text-align: center;
+
+    padding: 0px 10px 10px;
+}
+
+#Menu {
+    text-align: center;
+    padding: 40px 0px 0px;
+
+    border-bottom: 1px solid black;
+
+    background-color: aqua;
+
+    height: 250px;
+}
+
+.bloco-menu {
+    width: 200px;
+    height: auto;
+    
+    margin: 20px auto;
+
+    list-style: none;
+}
+
+#Menu a {
+    font-size: 1.3em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+#map {
+    align-items: center;
+    height: 300px;
+}
+
+iframe.map {
+    height: 200px;
+    width: 600px;
+}
+
+footer {
     background-color: black;
 
-    height: 60px;
+    margin-top: auto;
+    margin-right: auto;
+    height: 50vh;
+}
+
+.bloco-footer {
+    color: white;
+
+    text-align: center;
+    list-style: none;
+    margin: 1px auto;
+    width: 20vw;
 }
