@@ -54,3 +54,14 @@ nav {
     color: var(--text-cor2);
     text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+    #logo {
+        margin: 0px auto;
+        font-size: 1em;
+    }
+
+    #menu a {
+        display: none;
+    }
+}
