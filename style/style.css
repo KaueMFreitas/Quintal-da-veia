@@ -15,7 +15,9 @@ body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     background-color: black;
+    overflow-x: hidden;
     border-top: 1px solid black;
+    width: 100%;
 }
 ul{
     list-style: none;
