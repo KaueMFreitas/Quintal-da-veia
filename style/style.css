@@ -201,12 +201,13 @@ footer {
         margin-bottom: 40px;
     }
     .bloco-map h1 {
+        font-size: 4vmin;
         margin: 0px 0px 20px;
         margin-left: 5vw;
     }
     .bloco-map a {
         margin-left: 15vw;
-        font-size: 3vw;
+        font-size: 3vmin;
     }
     footer {
         height: auto;
