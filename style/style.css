@@ -17,6 +17,9 @@ body, html {
     background-color: black;
     border-top: 1px solid black;
 }
+ul{
+    list-style: none;
+}
 
 header {
     background-image: url(https://lh3.googleusercontent.com/p/AF1QipO0oD8Tst4qes-CR-KBAoHSEBCu3pBt-zR8zCl9=s1600-w400);
@@ -37,6 +40,7 @@ header img {
     margin: auto;
     padding-top: 3vw;
     width: 60vh;
+
 }
 
 section {
@@ -60,11 +64,11 @@ section {
 
     height: 50vh;
 }
-
 #Autalizações h1, h2 {
     margin-top: 3vw;
     text-align: center;
 }
+
 .bloco {
     width: 300px;
     height: 200px;
@@ -73,12 +77,10 @@ section {
 
     list-style: none;
 }
-
 .bloco h2 {
     font-size: 1.2em;
     margin: 20px 0px;
 }
-
 .bloco p {
     text-align: center;
 
@@ -95,8 +97,6 @@ section {
 
     height: 30vh;
 }
-
-
 .bloco-menu {
     width: 200px;
     height: 25px;
@@ -105,7 +105,6 @@ section {
 
     list-style: none;
 }
-
 #Menu a {
     padding: 10px;
     margin-bottom: 40px;
@@ -120,11 +119,80 @@ section {
     padding-bottom: 2vw;
 }
 
+
+#Depoimentos {
+    text-align: center;
+    padding: 20px 0px 5px;
+
+    border-bottom: 1px solid black;
+
+    background-color: lightsalmon;
+
+    height: 36vw;
+    overflow-y: auto;
+    
+}
+a.com{
+    padding: 10px;
+
+    margin-top: 20px;
+    margin-right: 20px;
+
+    color: white;
+
+    text-decoration: none;
+}
+.bloco-depo {
+    list-style: none;
+    
+    width: 20vw;
+    
+    padding-bottom: 5px;
+    margin: 10px auto;
+}
+.bloco-depo > p {
+    overflow-y: auto;
+
+    height: 290px;
+}
+.dep {
+    padding-bottom: 10px;
+}
+.bloco-depo p{
+    
+    margin: 10px auto;
+}
+
+#Galeria {
+    height: 90vw;
+    width: 100%;
+
+    background-color: blue;
+    overflow-y: auto;
+}
+#Galeria h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+
+    padding-top: 40px;
+}   
+#Galeria img{
+    display: block;
+    text-align: center;
+    box-shadow: 0px 0px 20px black;
+    
+    margin-right: 40px;
+    margin-left: 50%;
+    margin-top: 3vw;
+    width: 50vh;
+}
+
+
 #SMap {
     background-color: aquamarine;
     height: 36.6vw;
 }
-
 .bloco-map {
     float: left;
     width: auto;
@@ -139,7 +207,6 @@ section {
 
     text-shadow: var(--contorno);
 }
-
 .bloco-map a {
     margin-left: 13vw;
     padding: 10px;
@@ -159,6 +226,7 @@ section {
     height: 36.5vw;
 }
 
+
 footer {
     background-color: rgb(104, 104, 104);
     
@@ -167,7 +235,6 @@ footer {
     height: 50vh;
     border-top: 1px solid black;
 }
-
 .bloco-footer {
     color: white;
     
@@ -176,9 +243,34 @@ footer {
     margin: 0px auto;
     width: 20vw;
 }
+@media only screen and (max-width: 700px) {
+    header img {
+        padding-top: 8%;
+        width: 50vh;
+    }
+    
+    .bloco-depo  {
+        width: 30vw;
+    }
+    .bloco-depo > p {
+        height: 250px;
+    }
+   
+    #Galeria {
+        height: 100vw;
+    }
+    #Galeria img{
+        margin-left: 25%;
+        width: 25vh;
+        margin-right: 40px;
+    }
 
-@media only screen and (max-width: 500px) 
-{
+    #Depoimentos {
+        height: 65vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
     header {
         height: 30vh;
     }
@@ -187,6 +279,7 @@ footer {
         width: 30vh;
     }
 
+
     #Autalizações {
         height: 40vh;
     }
@@ -194,24 +287,76 @@ footer {
         padding-bottom: 10px;
         margin-bottom: 10px;
     }
+
+
     #Menu {
-        height: 65vw;
+        height: 55vw;
     }
     .bloco-menu {
         margin-bottom: 1vw;
     }
     #Menu article {
-        padding-bottom: 5vw;
+        padding-bottom: 10vw;
+    }
+
+    #galeria {
+        overflow-y: auto;
+        height: 60vw;
+    }
+    #Galeria img{
+        width: 20vh;
+        margin-bottom: 20%;
+        margin-left: 25%;
+    }
+
+
+    #CO {
+        overflow-y: auto;
+        height: 45vw;
+    }
+    .dep {
+        margin-top: 10px;
+    }
+    #Depoimentos {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        height: 65vw;
+    }
+    .bloco-depo {
+        width: 180px;
+        height: 200px;
+        
+        padding-top: 40px;
+        margin: 20px auto;
+        margin-bottom: 50px;
+    }
+    .bloco-depo > p {
+        overflow-y: auto;
+    
+        height: 200px;
+        width: 200px;
+    }
+
+
+    #SMap {
+        height: 39.7vw;
+    }
+    .google-map {
+        height: 39.5vw;
     }
     .bloco-map h1 {
         font-size: 3vmin;
-        margin: 0px 0px 20px;
+
+        margin: 25% 0px 20px;
         margin-left: 9vw;
     }
     .bloco-map a {
         margin-left: 13vw;
-        font-size: 4vmin;
+        font-size: 3.7vw;
     }
+
+
     footer {
         height: auto;
     }
