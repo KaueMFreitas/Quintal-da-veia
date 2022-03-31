@@ -13,6 +13,9 @@
 
 body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: black;
+    border-top: 1px solid black;
 }
 
 header {
@@ -55,15 +58,15 @@ section {
 
     padding: 10px 0px 0px ;
 
-    height: 55vh;
+    height: 50vh;
 }
 
 #Autalizações h1, h2 {
-    margin-top: 5vw;
+    margin-top: 3vw;
     text-align: center;
 }
 .bloco {
-    width: 500px;
+    width: 300px;
     height: 200px;
     
     margin: 0px auto;
@@ -98,13 +101,14 @@ section {
     width: 200px;
     height: auto;
     
-    margin: 10px auto 0px;
+    margin: 10px auto 10px;
 
     list-style: none;
 }
 
 #Menu a {
     font-size: 1.4em;
+
     padding: 10px;
     background-color: white;
     border: 1px solid black;
@@ -114,41 +118,52 @@ section {
     font-weight: bold;
 }
 
-#map {
-    display: flex;
-    background-color: black;
-
-    list-style: none;
-}
-.google {
-    height: 0px;
+#SMap {
+    background-color: aquamarine;
+    height: 36.6vw;
 }
 
 .bloco-map {
     float: left;
-    width: 39.5vw;
-    height: 500px;
-    background-color: rgb(182, 182, 182);
+    width: auto;
+
     color: white;
 }
 .bloco-map h1 {
-    text-align: center;
+    font-size: 4vmax;
+    margin-top: 8vw;
+    margin-bottom: 5vw;
+    margin-left: 3vw;
+
     text-shadow: var(--contorno);
 }
 
+.bloco-map a {
+    margin-left: 13vw;
+    margin-top: 30px;
+
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid black;
+
+    font-size: 4vw;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 .google-map {
-    padding-top: 0px;
     float: right;
-    width: 60%;
-    height: 500px;
+    width: 50%;
+    height: 36.5vw;
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(104, 104, 104);
     
     margin-top: auto;
     margin-right: auto;
     height: 50vh;
+    border-top: 1px solid black;
 }
 
 .bloco-footer {
@@ -179,10 +194,10 @@ footer {
         margin-bottom: 10px;
     }
     #Menu {
-        height: 22vh;
+        height: 45vh;
     }
     footer {
-        height: 25vh;
+        height: auto;
     }
     footer p {
         font-size: .7em;
