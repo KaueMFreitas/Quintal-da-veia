@@ -177,6 +177,7 @@ a.com{ /* configurações dos botões de link*/
     background-color: var(--background-color4);
 }
 #img-gal { /* rolagem separada */
+    height: 80vw;
     overflow-y: auto;
 }
 #Galeria h1 { /* configuração de titulo */
@@ -292,7 +293,7 @@ footer { /* configurações aréa roda pé */
 }
 
 /*  aréa de resposividade pequena*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 300px) {
     header { /* ajustes na aréa header*/
         height: 30vh;
     }
@@ -318,7 +319,7 @@ footer { /* configurações aréa roda pé */
     }
 
     #Menu { /* ajustes do tamanho em menu */
-        height: 55vw;
+        height: 80vw;
     }
     .bloco-menu { /* ajustes na margin */
         margin-bottom: 1vw;
@@ -333,9 +334,6 @@ footer { /* configurações aréa roda pé */
         
         height: 65vw;
         overflow-y: auto;
-    }
-    #CDepoimentos { /* tamanho da ul */
-        height: 45vw;
     }
     .bloco-depo { /* ajuste na divitoria do bloco */ 
         width: 180px;
@@ -355,11 +353,11 @@ footer { /* configurações aréa roda pé */
     }
     #img-gal {
         overflow-y: auto;
-        height: 400px;
+        height: 65vw;
     }
     #Galeria img{ /* ajustes nas imagens */
-        width: 23vw;
-        margin-left: 20%;
+        width: 36vw;
+        margin-left: 16%;
         margin-bottom: 50PX;
     }
 
@@ -384,6 +382,9 @@ footer { /* configurações aréa roda pé */
     footer { /* ajustes na aréa roda pé*/
         height: auto;
     }
+    footer h2 {
+        font-size: 1em;
+}
     footer p { /* ajuste de paragrafos */
         font-size: .7em;
     }
