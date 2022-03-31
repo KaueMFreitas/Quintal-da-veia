@@ -195,19 +195,22 @@ footer {
         margin-bottom: 10px;
     }
     #Menu {
-        height: 60vw;
+        height: 65vw;
     }
     .bloco-menu {
-        margin-bottom: 40px;
+        margin-bottom: 1vw;
+    }
+    #Menu article {
+        padding-bottom: 5vw;
     }
     .bloco-map h1 {
-        font-size: 4vmin;
+        font-size: 3vmin;
         margin: 0px 0px 20px;
-        margin-left: 5vw;
+        margin-left: 9vw;
     }
     .bloco-map a {
-        margin-left: 15vw;
-        font-size: 3vmin;
+        margin-left: 13vw;
+        font-size: 4vmin;
     }
     footer {
         height: auto;
