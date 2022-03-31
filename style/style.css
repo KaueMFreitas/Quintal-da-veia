@@ -73,32 +73,34 @@ header img { /* Imagem do Logo no Header*/
 
     padding: 10px 0px 0px ;
 
-    height: 50vh;
+    height: 30vw;
 }
 #atual { /* rolagem lateral */
     overflow-y: auto;
+    height: 20vw;
 }
 #Autalizações h1, h2 { /* configuração de Titulo*/
     color: var(--text-color-titulo);
+    font-size: 4vw;
 
     text-align: center;
 
     margin-top: 1vw;
 }
 .bloco { /*Cofigurações da caixa de atualizações*/
-    width: 300px;
+    width: 100vh;
     height: 200px;
     
-    margin: 0px auto;
+    margin: 30px auto;
 }
 .bloco h2 { /* Titulo das caixas atualização*/
-    font-size: 1.2em;
+    font-size: 3vh;
 
     margin: 10px 0px;
 }
 .bloco p { /* Configuração de texto das caixas */
     text-align: center;
-
+    font-size: 3vh;
     color: var(--text-color-cabeçario);
 
     padding: 0px 10px 5px;
@@ -109,13 +111,19 @@ header img { /* Imagem do Logo no Header*/
     
     background-color: var(--background-color2);
     
-    padding-top: 20px;
+    padding-top: 1vh;
 
-    height: 30vh;
+    height: calc(15vw + 30px);
+}
+#Menu h1 {
+    font-size: 4vw;
+}
+.bloco-menu p {
+    font-size: 2vw;
 }
 .bloco-menu { /* configurações da caixa do menu*/
     width: 200px;
-    height: 25px;
+    height: 2vw;
     
     margin: 10px auto;
 }
@@ -127,12 +135,13 @@ header img { /* Imagem do Logo no Header*/
 
     color: var(--text-color-cabeçario);
     text-decoration: none;
+    font-size: 2vw;
     font-weight: bold;
 
-    padding: 10px;
+    padding: 1vw;
 }
 #Menu article { /* espaçamento do botão */
-    padding-bottom: 20px;
+    padding-bottom: 3vw;
 }
 
 #Depoimentos { /* configuração aréa depoimentos */
@@ -141,8 +150,8 @@ header img { /* Imagem do Logo no Header*/
     background-color: var(--background-color3);
     
     padding: 20px 0px 5px;
-
-    height: 36vw;
+    
+    height: 50vw;
 }
 a.com{ /* configurações dos botões de link*/
     padding: 10px;
@@ -154,37 +163,37 @@ a.com{ /* configurações dos botões de link*/
 
     text-decoration: none;
 }
-#CDepoimento { /* rolagem lateral dos depoimentos */
-    overflow-y: auto;
-}
+
 .bloco-depo { /* configurações da caixa do depoimentos */
-    width: 20vw;
+    width: 40vh;
     
     padding-bottom: 5px;
-    margin: 10px auto;
+    margin: 5px auto;
 }
 .bloco-depo p { /* ajustes de cabeçario*/
     overflow-y: auto;
-    height: 300px;
+    height: 27vw;
 
     margin: 15px auto;
 }
 
+
 #Galeria { /* configurações aréa galeria*/
-    height: 90vw;
+    height: 70vw;
     width: 100%;
 
     background-color: var(--background-color4);
 }
 #img-gal { /* rolagem separada */
-    height: 80vw;
+    height: 50vw;
     overflow-y: auto;
+
 }
 #Galeria h1 { /* configuração de titulo */
     color: var(--text-color-titulo);
     text-align: center;
     font-weight: bold;
-    font-size: 4em;
+    font-size: 15vw;
 
     padding-top: 10px;
 }   
@@ -194,11 +203,9 @@ a.com{ /* configurações dos botões de link*/
 
     text-align: center;
     
-    margin-right: 40px;
-    margin-left: 50%;
     margin-top: 3vw;
-
-    width: 50vh;
+    margin-left: 10px;
+    width: 30vw;
 }
 
 
@@ -262,38 +269,74 @@ footer { /* configurações aréa roda pé */
 }
 
 /*  aréa de resposividade media */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 755px) {
     header img { /* ajustes do logo no header */ 
         padding-top: 8%;
         width: 50vh;
     }
+
+    #atual { /* ajuste da rolagem lateral de atualizações */
+        overflow-y: auto;
+        height: 20vw;
+    }
+    .bloco { /*ajuste da caixa de atualizações*/
+        width: 100vh;
+        height: 20px;
+        
+        margin: 30px auto;
+    }
+
+    #Menu { /* ajustes aréa menu */
+        height: 30vw;
+    }
+    #Menu article { /* ajuste espaçamento do botão */
+        padding-bottom: 5vw;
+    }
+    .bloco-menu p {
+        font-size: 3vw;
+    }
+
     
-    #Depoimentos { /* ajustes em depoimentos */
-        height: 65vw;
+    #Depoimentos { /* ajustes aréa depoimentos */
+        height: 70vw;
+    }
+    #CDepoimento { /* ajustes de scroll */
+        overflow-y: auto;
+        height: 55vw;
     }
     .bloco-depo  { /* ajustes do tamanho dos depoimentos */
-        width: 30vw;
+        width: 31vh;
     }
     .bloco-depo > p { /* ajustes do tamanho dos textos */
-        height: 250px;
+        overflow-y: auto;
+        height: 45vw;
     }
    
+
     #Galeria { /* ajustes do tamanho da aréa */
-        height: 100vw;
+        height: 80vw;
+    }
+    #img-gal {
+        margin: 0px 5vw;
     }
     #Galeria img{ /* ajustes nas imagens */
-        width: 25vh;
-
-        margin-left: 25%;
-        margin-right: 40px;
+        width: 25vw;
     }
+
+
     .google-map { /* ajuste de tamanho do mapa */
         height: 36.2vw;
+    }
+    footer {
+        height: auto;
+    }
+    footer p {
+        font-size: 2vw;
     }
 }
 
 /*  aréa de resposividade pequena*/
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
     header { /* ajustes na aréa header*/
         height: 30vh;
     }
@@ -305,67 +348,82 @@ footer { /* configurações aréa roda pé */
 
 
     #Autalizações { /* ajustes na aréa atualizações */
-        height: 40vh;
-
+        height: 45vw;
+    }
+    #Autalizações > h1 {
+        font-size: 6vw;
+    }
+    #atual p {
+        font-size: 4vw;
+    }
+    #atual h2 {
+        font-size: 4vw;
     }
     #atual {
-        height: 30vh;
+        height: 30vw;
         overflow-y: auto;
     }
     .bloco { /* ajustes na divisorias */
-        padding-bottom: 10px;
+        padding-bottom: 50px;
         margin-bottom: 10px;
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
     #Menu { /* ajustes do tamanho em menu */
-        height: 80vw;
+        height: 50vw;
     }
     .bloco-menu { /* ajustes na margin */
-        margin-bottom: 1vw;
+        margin-bottom: 4vw;
     }
     #Menu article { /* ajustes no padding */
-        padding-bottom: 10vw;
+        padding-bottom: 3vh;
+    }
+    #Menu h1 { /* ajuste de tamanho */
+        font-size: 5vw;
+    }
+    .bloco-menu p { /* ajuste de tamanho */
+        font-size: 3vw;
+    }
+    #Menu a { /* ajuste de tamanho do botão cardapio*/
+        font-size: 3vw;
     }
 
     #Depoimentos { /* ajustes na aréa depoimentos */
-        padding-top: 20px;
-        padding-bottom: 20px;
-        
-        height: 65vw;
+        padding-top: 10px;
+    }
+    #CDepoimento { /* ajustes de scroll */
+        height: 45vw;
         overflow-y: auto;
     }
     .bloco-depo { /* ajuste na divitoria do bloco */ 
-        width: 180px;
-        height: 200px;
+        width: 170px;
+        height: 150px;
         
-        padding-top: 40px;
+        padding-top: 10px;
         margin: 20px auto;
-        margin-bottom: 50px;
+
     }
     .bloco-depo > p { /* ajustes nos texto dos paragrafos */
         height: 140px;
-        width: 200px;
+        width: 170px;
     }
 
     #galeria { /* ajustes da area galeria */
-        height: 60vw;
+        height: 40vh;
     }
     #img-gal {
-        overflow-y: auto;
-        height: 65vw;
+        margin-left: 8vw;
     }
     #Galeria img{ /* ajustes nas imagens */
-        width: 36vw;
-        margin-left: 16%;
-        margin-bottom: 50PX;
+        width: 25vw;
+        margin-bottom: 10px;
     }
 
     #SMap { /* ajustes na aréa mapa */
         height: 39.7vw;
     }
     .google-map { /* ajuste no mapa */
-        height: 39.5vw;
+        height: 39vw;
     }
     .bloco-map h1 { /* ajuste no titulo */
         font-size: 3vmin;
