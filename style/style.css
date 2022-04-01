@@ -401,13 +401,13 @@ footer h2{
     }
 
     #Menu { /* ajustes do tamanho em menu */
-        height: 12rem;
+        height: 60vw;
     }
     .bloco-menu { /* ajustes na margin */
         margin-bottom: 4vw;
     }
     #Menu article { /* ajustes no padding */
-        padding-bottom: 2rem;
+        padding-bottom: 10vw;
     }
     #Menu h1 { /* ajuste de tamanho */
         font-size: 8vw;
