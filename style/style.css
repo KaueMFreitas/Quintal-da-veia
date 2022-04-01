@@ -374,12 +374,12 @@ footer h2{
         height: 35vh;
 
         padding-top: 13vh;
-        padding-bottom: 6%;
+        padding-bottom: 6vw;
     }
     header > img { /* ajuste do tamanho do logo */
-        padding-top: 4vw;
+        padding-top: 5vw;
 
-        width: 25vw;
+        width: 35vw;
     }
 
 
