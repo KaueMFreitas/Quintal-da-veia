@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
@@ -9,18 +13,22 @@
 
 :root { /* Variaveis */
 
-    --background-color1: rgb(255, 140, 0);
-    --background-color2: rgb(0, 47, 255);
-    --background-color3: rgb(250, 128, 114);
-    --background-color4: rgb(0, 47, 255);
-    --background-color5: rgb(0, 217, 255);
+    --background-color1: #BA5400;
+    --background-color2: #B55100;
+    --background-color3: #A14800;
+    --background-color4: #3B1A00;
+    --background-color5: #823B00;
     --background-color6: rgb(104, 104, 104);
 
     --text-color-titulo: rgb(0, 0, 0);
     --text-color-titulo2: rgb(255, 255, 255);
-    --text-color-cabeçario: rgb(0, 0, 0);
+    --text-color-titulo3: #F56E00;
 
-    --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --text-color-cabeçario: #F56E00;
+    --text-color-cabeçario2: white;
+
+    --font-padrao: 'Ubuntu', sans-serif;
+    --font-titulo: 'Varela Round', sans-serif;
     
     --contorno: 1px 0px black, 0px 1px black, -1px 0px black, 0px -1px black;
 }
@@ -38,7 +46,19 @@ section { /* divisoria entre sections */
 ul{ /* configuração padrão de listas */
     list-style: none;
 }
+a {
+    color: var(--text-color-cabeçario2);
 
+    font-family: var(--font-padrao);
+}
+h1 {
+    font-family: var(--font-titulo);
+
+    text-shadow: var(--contorno);
+}
+p {
+    font-family: var(--font-padrao);
+}
 .container { /* configuração padrão de caixas */
     display: flex;
 
@@ -46,7 +66,7 @@ ul{ /* configuração padrão de listas */
 }
 
 header { /* Configurações do cabeçario */
-    background-image: url(https://lh3.googleusercontent.com/p/AF1QipO0oD8Tst4qes-CR-KBAoHSEBCu3pBt-zR8zCl9=s1600-w400);
+    background-image: url(../imagem/wallpaper.jpg);
 
     background-size: cover;
     background-position: center;
@@ -55,16 +75,16 @@ header { /* Configurações do cabeçario */
 
     box-shadow: inset 0px -10px 10px -5px rgba(0, 0, 0, 0.589);
 
-    height: 60vh;
+    max-height: 60vw;
+    padding-top: 6vw;
+    padding-bottom: 4%;
 }
-
 header img { /* Imagem do Logo no Header*/
     display: block;
 
-    width: 60vh;
+    max-width: 30vw;
 
     margin: auto;
-    padding-top: 3vw;
 }
 
 
@@ -87,6 +107,9 @@ header img { /* Imagem do Logo no Header*/
 
     margin-top: 1vw;
 }
+#Autalizações h1 {
+    color: var(--text-color-titulo3);
+}
 .bloco { /*Cofigurações da caixa de atualizações*/
     width: 100vh;
     height: 200px;
@@ -101,7 +124,7 @@ header img { /* Imagem do Logo no Header*/
 .bloco p { /* Configuração de texto das caixas */
     text-align: center;
     font-size: 3vh;
-    color: var(--text-color-cabeçario);
+    color: var(--text-color-cabeçario2);
 
     padding: 0px 10px 5px;
 }
@@ -117,8 +140,10 @@ header img { /* Imagem do Logo no Header*/
 }
 #Menu h1 {
     font-size: 4vw;
+    color: var(--text-color-titulo3);
 }
 .bloco-menu p {
+    color: var(--text-color-cabeçario2);
     font-size: 2vw;
 }
 .bloco-menu { /* configurações da caixa do menu*/
@@ -128,7 +153,6 @@ header img { /* Imagem do Logo no Header*/
     margin: 10px auto;
 }
 #Menu a { /* configuração do botão cardapio*/
-    background-color: white;
 
     border: 1px solid black;
     border-radius: 15px;
@@ -147,7 +171,7 @@ header img { /* Imagem do Logo no Header*/
 #Depoimentos { /* configuração aréa depoimentos */
     text-align: center;
 
-    background-color: var(--background-color3);
+    background-color: var(--background-color2);
     
     padding: 20px 0px 5px;
     
@@ -157,13 +181,16 @@ a.com{ /* configurações dos botões de link*/
     padding: 10px;
 
     margin-top: 20px;
-    margin-right: 20px;
+    margin-right: 60px;
 
     color: var(--text-color-cabeçario);
 
+    font-size: 4vw;
     text-decoration: none;
 }
-
+#Depoimentos h1 {
+    color: var(--text-color-titulo3);
+}
 .bloco-depo { /* configurações da caixa do depoimentos */
     width: 40vh;
     
@@ -174,6 +201,8 @@ a.com{ /* configurações dos botões de link*/
     overflow-y: auto;
     height: 27vw;
 
+    color: var(--text-color-cabeçario2);
+
     margin: 15px auto;
 }
 
@@ -182,7 +211,7 @@ a.com{ /* configurações dos botões de link*/
     height: 70vw;
     width: 100%;
 
-    background-color: var(--background-color4);
+    background-color: var(--background-color5);
 }
 #img-gal { /* rolagem separada */
     height: 50vw;
@@ -190,7 +219,7 @@ a.com{ /* configurações dos botões de link*/
 
 }
 #Galeria h1 { /* configuração de titulo */
-    color: var(--text-color-titulo);
+    color: var(--text-color-titulo3);
     text-align: center;
     font-weight: bold;
     font-size: 15vw;
@@ -210,7 +239,7 @@ a.com{ /* configurações dos botões de link*/
 
 
 #SMap { /* configurações aréa mapa */
-    background-color: var(--background-color5);
+    background-color: var(--background-color3);
 
     height: 36.6vw;
 }
@@ -247,18 +276,21 @@ a.com{ /* configurações dos botões de link*/
     float: right;
 
     width: 50%;
-    height: 36.47vw;
+    height: 36.4vw;
 }
 
 
 footer { /* configurações aréa roda pé */
-    background-color: var(--background-color6);
+    background-color: var(--background-color4);
     border-top: 1px solid black;
     
     margin-top: auto;
     margin-right: auto;
 
     height: 50vh;
+}
+footer h2{
+    color: var(--text-color-titulo3);
 }
 .bloco-footer { /* divisoria dos conteiners*/
     color: white;
@@ -287,7 +319,7 @@ footer { /* configurações aréa roda pé */
     }
 
     #Menu { /* ajustes aréa menu */
-        height: 30vw;
+        height: 35vw;
     }
     #Menu article { /* ajuste espaçamento do botão */
         padding-bottom: 5vw;
@@ -298,7 +330,7 @@ footer { /* configurações aréa roda pé */
 
     
     #Depoimentos { /* ajustes aréa depoimentos */
-        height: 70vw;
+        height: 75vw;
     }
     #CDepoimento { /* ajustes de scroll */
         overflow-y: auto;
@@ -309,9 +341,11 @@ footer { /* configurações aréa roda pé */
     }
     .bloco-depo > p { /* ajustes do tamanho dos textos */
         overflow-y: auto;
-        height: 45vw;
+        height: 40vw;
     }
-   
+    a.com {
+        font-size: 3vw;
+    }
 
     #Galeria { /* ajustes do tamanho da aréa */
         height: 80vw;
@@ -322,7 +356,6 @@ footer { /* configurações aréa roda pé */
     #Galeria img{ /* ajustes nas imagens */
         width: 25vw;
     }
-
 
     .google-map { /* ajuste de tamanho do mapa */
         height: 36.2vw;
@@ -338,12 +371,15 @@ footer { /* configurações aréa roda pé */
 /*  aréa de resposividade pequena*/
 @media only screen and (max-width: 400px) {
     header { /* ajustes na aréa header*/
-        height: 30vh;
+        height: 35vh;
+
+        padding-top: 13vh;
+        padding-bottom: 6%;
     }
     header > img { /* ajuste do tamanho do logo */
         padding-top: 4vw;
 
-        width: 30vh;
+        width: 25vw;
     }
 
 
@@ -400,12 +436,15 @@ footer { /* configurações aréa roda pé */
         height: 150px;
         
         padding-top: 10px;
-        margin: 20px auto;
+        margin: 40px auto;
 
     }
     .bloco-depo > p { /* ajustes nos texto dos paragrafos */
         height: 140px;
         width: 170px;
+    }
+    a.com {
+        font-size: 5vw;
     }
 
     #galeria { /* ajustes da area galeria */
