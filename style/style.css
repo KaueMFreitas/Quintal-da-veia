@@ -307,7 +307,7 @@ footer h2{
     }
     header img { /* ajustes do logo no header */ 
         padding-top: 8%;
-        width: 50vh;
+        width: 15rem;
     }
 
     #Autalizações { /* ajustes na aréa atualizações */
@@ -370,7 +370,7 @@ footer h2{
     }
     #Galeria img{ /* ajustes nas imagens */
         width: 25vw;
-        margin-left: 1rem;
+        margin-left: .6rem;
     }
 
 
