@@ -12,10 +12,13 @@
     <title>Quintal da véia - Inicio</title>
 </head>
 <body>  
-    <nav>
+    <nav id="nav">
         <h3 id="logo">Quintal da véia</h3>
+        <button id="btn-mobile"> Menu 
+            <span id="icon"></span>
+        </button>
         <ul id="menu">
-            <li> <a href="../index.html" id="ativo"> Inicio</a></li>
+            <li> <a href="../index.html"> Inicio </a></li>
             <li> <a href="https://www.google.com/maps/dir//Quintal+da+V%C3%A9ia/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ce03a8a5891ae9:0x9e3e915a29a66999!2m2!1d-46.3295848!2d-23.9515338" target="_blank"> caminho </a></li>
             <li> <a href="https://api.whatsapp.com/send?phone=5513997943856&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20quintal" id="whatsapp" target="_blank"> Whatsapp </a></li>
         </ul>
@@ -26,5 +29,18 @@
     <footer>
 
     </footer>
+
+    <script>
+        const btnmobile = document.getElementById('btn-mobile');
+
+        function ToggleMenu(event) {
+            if (event.type === 'touchstart') event.preventDefaul ();
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+
+        btnmobile.addEventListener('click', ToggleMenu);
+        btnmobile.addEventListener('touchstart', ToggleMenu);
+    </script>
 </body>
 </html>
