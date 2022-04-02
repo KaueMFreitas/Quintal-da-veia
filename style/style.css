@@ -76,13 +76,13 @@ header { /* Configurações do cabeçario */
     box-shadow: inset 0px -10px 10px -5px rgba(0, 0, 0, 0.589);
 
     max-height: 60vw;
-    padding-top: 6vw;
-    padding-bottom: 4%;
+    padding-top: 10vw;
+    padding-bottom: 1rem;
 }
 header img { /* Imagem do Logo no Header*/
     display: block;
 
-    max-width: 30vw;
+    width: 20rem;
 
     margin: auto;
 }
@@ -129,6 +129,7 @@ header img { /* Imagem do Logo no Header*/
     padding: 0px 10px 5px;
 }
 
+
 #Menu { /* configuração aréa menu */
     text-align: center;
     
@@ -139,7 +140,7 @@ header img { /* Imagem do Logo no Header*/
     height: calc(15vw + 30px);
 }
 #Menu h1 {
-    font-size: 4vw;
+    font-size: 2rem;
     color: var(--text-color-titulo3);
 }
 .bloco-menu p {
@@ -167,6 +168,7 @@ header img { /* Imagem do Logo no Header*/
 #Menu article { /* espaçamento do botão */
     padding-bottom: 3vw;
 }
+
 
 #Depoimentos { /* configuração aréa depoimentos */
     text-align: center;
@@ -233,7 +235,7 @@ a.com{ /* configurações dos botões de link*/
     text-align: center;
     
     margin-top: 3vw;
-    margin-left: 10px;
+    margin-left: 2rem;
     width: 30vw;
 }
 
@@ -241,14 +243,12 @@ a.com{ /* configurações dos botões de link*/
 #SMap { /* configurações aréa mapa */
     background-color: var(--background-color3);
 
-    height: 36.6vw;
+    height: 26rem;
 }
 .bloco-map { /* configurações do texto */
     float: left;
 
     width: auto;
-
-    color: white;
 }
 .bloco-map h1 { /* configurações do titulo */
     color: var(--text-color-titulo2);
@@ -276,7 +276,7 @@ a.com{ /* configurações dos botões de link*/
     float: right;
 
     width: 50%;
-    height: 36.4vw;
+    height: 25.8rem;
 }
 
 
@@ -302,14 +302,23 @@ footer h2{
 
 /*  aréa de resposividade media */
 @media only screen and (max-width: 755px) {
+    header { /* ajustes do header */
+        padding-top: 2rem;
+    }
     header img { /* ajustes do logo no header */ 
         padding-top: 8%;
         width: 50vh;
     }
 
+    #Autalizações { /* ajustes na aréa atualizações */
+        height: 15rem;
+    }
+    #Autalizações > h1 {
+        font-size: 2rem;
+    }
     #atual { /* ajuste da rolagem lateral de atualizações */
         overflow-y: auto;
-        height: 20vw;
+        height: 10rem;
     }
     .bloco { /*ajuste da caixa de atualizações*/
         width: 100vh;
@@ -318,14 +327,20 @@ footer h2{
         margin: 30px auto;
     }
 
+
     #Menu { /* ajustes aréa menu */
-        height: 35vw;
+        height: 15rem;
     }
     #Menu article { /* ajuste espaçamento do botão */
-        padding-bottom: 5vw;
+        padding-bottom: 5rem;
     }
     .bloco-menu p {
-        font-size: 3vw;
+        margin-top: 20px;
+        font-size: 1.3rem;
+    }
+
+    #Menu a { /* ajuste de tamanho do botão cardapio*/
+        font-size: 2rem;
     }
 
     
@@ -344,7 +359,7 @@ footer h2{
         height: 40vw;
     }
     a.com {
-        font-size: 3vw;
+        font-size: 1.4rem;
     }
 
     #Galeria { /* ajustes do tamanho da aréa */
@@ -355,11 +370,30 @@ footer h2{
     }
     #Galeria img{ /* ajustes nas imagens */
         width: 25vw;
+        margin-left: 1rem;
     }
 
-    .google-map { /* ajuste de tamanho do mapa */
-        height: 36.2vw;
+
+    #SMap { /* ajuste aréa mapa */
+        height: 15.55rem;
     }
+    .bloco-map h1 { /* ajuste no titulo */
+        font-size: 1.5rem;
+        text-align: center;
+
+        margin: 3rem 0px 2vw;
+        margin-left: 2rem;
+
+        width: 30vw;
+    }
+    .bloco-map a {
+        margin-left: 10vw;
+    }
+    .google-map { /* ajuste de tamanho do mapa */
+        height: 15.36rem;
+    }
+
+
     footer {
         height: auto;
     }
@@ -371,15 +405,16 @@ footer h2{
 /*  aréa de resposividade pequena*/
 @media only screen and (max-width: 400px) {
     header { /* ajustes na aréa header*/
-        height: 40vh;
+        height: 13rem;
 
-        padding-top: 11vh;
-        padding-bottom: 6vw;
+        padding-top: 3rem;
+    }
+    header img { /* ajustes na aréa header*/
+        width: 9rem;
     }
 
-
     #Autalizações { /* ajustes na aréa atualizações */
-        height: 45vw;
+        height: 15rem;
     }
     #Autalizações > h1 {
         font-size: 6vw;
@@ -391,7 +426,7 @@ footer h2{
         font-size: 4vw;
     }
     #atual {
-        height: 30vw;
+        height: 12rem;
         overflow-y: auto;
     }
     .bloco { /* ajustes na divisorias */
@@ -400,23 +435,24 @@ footer h2{
         margin-top: 5px;
     }
 
+
     #Menu { /* ajustes do tamanho em menu */
-        height: 15rem;
+        height: 18rem;
     }
     .bloco-menu { /* ajustes na margin */
-        margin-bottom: 4vw;
+        margin-bottom: 2rem;
     }
     #Menu article { /* ajustes no padding */
-        padding-bottom: 3rem;
+        padding-bottom: 2.5rem;
     }
     #Menu h1 { /* ajuste de tamanho */
         font-size: 8vw;
     }
     .bloco-menu p { /* ajuste de tamanho */
-        font-size: 4vw;
+        font-size: 1rem;
     }
     #Menu a { /* ajuste de tamanho do botão cardapio*/
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     #Depoimentos { /* ajustes na aréa depoimentos */
@@ -425,13 +461,15 @@ footer h2{
     #CDepoimento { /* ajustes de scroll */
         height: 45vw;
         overflow-y: auto;
+
+        margin-bottom: 1.5rem;
     }
     .bloco-depo { /* ajuste na divitoria do bloco */ 
         width: 170px;
         height: 150px;
         
         padding-top: 10px;
-        margin: 40px auto;
+        margin: 20px auto;
 
     }
     .bloco-depo > p { /* ajustes nos texto dos paragrafos */
@@ -439,8 +477,11 @@ footer h2{
         width: 170px;
     }
     a.com {
+        margin-right: 3rem;
+
         font-size: 5vw;
     }
+
 
     #galeria { /* ajustes da area galeria */
         height: 40vh;
@@ -450,7 +491,7 @@ footer h2{
     }
     #Galeria img{ /* ajustes nas imagens */
         width: 25vw;
-        margin-right: 2.5vw;
+        margin-left: 1rem;
         margin-bottom: 5vw;
     }
 
@@ -461,14 +502,18 @@ footer h2{
         height: 39vw;
     }
     .bloco-map h1 { /* ajuste no titulo */
-        font-size: 3vmin;
+        font-size: 1.1rem;
+        text-align: center;
 
-        margin: 25% 0px 20px;
-        margin-left: 9vw;
+        margin: 1rem 0px .1rem;
+        margin-left: auto;
+
+        width: 6rem;
     }
     .bloco-map a { /* ajustes o botão */
-        margin-left: 13vw;
-        font-size: 3.7vw;
+        margin-left: 10vw;
+
+        font-size: 1rem;
     }
 
 
