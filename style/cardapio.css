@@ -53,16 +53,18 @@ hr {
     border-width:0;
 }
 p {
+    padding: 10px;
     color: var(--text-color-cabeçario2);
     text-shadow: var(--contorno);
     text-align: center;
     font-size: 3vh;
 }
 h1 {
-    font-size: 2rem;
     color: var(--text-color-titulo3);
     text-shadow: var(--contorno);
     text-align: center;
+    font-size: 5rem;
+    
 }
 body { /* configuração do corpo*/
     background-color: var(--background-color1);
@@ -75,16 +77,34 @@ body { /* configuração do corpo*/
 li { /* configuração padrão das listas*/
     list-style: none;
 }
+.box {
+    border: 1px solid black;
+    width: 45vw;
+    height: auto;
 
+    padding: 10px;
+    
+    margin: 30px auto;
+}
+.divs {
+    height: auto;
+    
+    padding-bottom: 50px;
+}
 header { /* configuração padrão do header */
     background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
+
 }
-header h1 { /* configuração do titulo no header */
-    margin-top: 5rem;
+header h1 {
+    font-size: 5rem;
+    padding-top: 6rem;
+}
+.titulo {
+    margin-top: 15px;
 }
 
 .nav {
@@ -114,36 +134,44 @@ header h1 { /* configuração do titulo no header */
     color: var(--text-color-titulo2);
 }
 
-.divs {
-    height: auto;
-    
-    padding-bottom: 50px;
-    padding-top: 20px;
-}
 
 #Chopp header {
     padding-top: 13vw;
 
     background-image: url('https://media.istockphoto.com/photos/drink-and-bar-craft-beer-picture-id1312608268?b=1&k=20&m=1312608268&s=170667a&w=0&h=m48LLjbwanGV6UI8nu0lfvqoHW0HIS-naPtQoCyCDnY=');
-    background-position: left center;
-
+    background-position: center;
 }
+#Chopp header h1 { /* configuração do titulo no header */
+    margin-top: 0;
+    padding-top: 0px;
+    font-size: 2.5rem;
+}
+
 #Drinks header {
     background-image: url(https://lh3.googleusercontent.com/4fS_C6pb5wgzTk7sOxQqar3p2PIzuLoY-KmrjaSrb5pJ4fbAiiS9crTMwyAWzA9egDYneDLZPWkqMDKaIA6mbMGg5sjEQtEhvCLBX9sPqXg_QsrQW35JW2TMPt3bRMIkE9vhG3zyA3Suoppxteux-WeT5vqsOeVb8rSXZgqQIFwu-6Bg6oLEj0XYYW6s-WJdeTpiG-31o7fPcsasQdjFdFqrIc_vSskDOly_xlRnoibchdfwC0I4LqRSevGqPlNK9is-wY5rw2xYKecfogonA-TloKde1SkSvztNdimh7AGl6yj44D4V0CELNIRr9TBTqqEbMwOZgwsaikE3vTQEW5o2TwsWwR71dWFO1HQelDfbi4sC5bkjYY-L7eByi8xWhOje40xD2rMs4mJrq5l2XJwrZyRh_Ha5TghBRWZhCmiI40MkuV2rrKrPdLOZTGdBimcO4aSCw7e62g57T46AViBfKCzZ_zBeyz5zUkIVIJyNKNkMFBI0F5Nnw39RPU1mrN1OJmKObHCMiZYs_jSUL3vK1gD_UJwTw8FmLbwX8VU5RYnVNG8xuMCPdmyhdvkHTMLZfOAB8Lh6EJoeHwNoOn6JejAe5xvSdQ865ysxIgIN8iMO4oHA3557tM9EgvK4GaW79pcUv3V2Z7p87m6rZGGwe9lOvPVWo14Lmn44AlnxUu5diXE40shlfeG9m1SewRw_6RUGgDVm_XcS3xzzPBHuimoJwgrCJ2Uk2EwZaiHj0R7L2OYYeM5Rfi59nK9JJdOBqPxv3ihI7zvZTvWk-r_WIwuJSshNaICGj2AO7e-87vFOZ31oIaiAWhscw9ovtT3bVl38=w683-h511-no?authuser=0);
     background-position: center;
 }
-#Drinks header h1 {
-    margin: 0px;
+
+
+#gin .real{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.box#gin {
+    width: auto;
+}
+#gin ol {
+    text-align: center;
+    text-shadow: var(--contorno);
+    color: var(--text-color-cabeçario2);
+    padding-bottom: 15px;
 }
 
-.box {
-    border: 1px solid black;
-    width: 45vw;
-    height: auto;
 
-    padding: 10px;
-    
-    margin: 30px auto;
+#Dose header {
+    background-image: url(https://img.freepik.com/fotos-gratis/copo-de-bebida-alcoolica-destilada-em-fundo-de-madeira-com-espaco-de-copia-para-o-texto-ligue-para-cachaca-ou-cachaca_72932-1929.jpg?w=740);
+    background-position: top center;
+    padding-top: 0px;
 }
 
 @media only screen and (max-width: 755px) {
@@ -156,8 +184,14 @@ header h1 { /* configuração do titulo no header */
         font-size: 2rem;
 
     }
+
+    #Chopp header h1 { /* ajustes do titulo no header */
+        margin-top: 6rem;
+        padding-top: 0px;
+        font-size: 2.5rem;
+    }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     
     #bloco {
         margin-left: 5vw;
