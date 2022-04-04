@@ -76,13 +76,13 @@ header { /* Configurações do cabeçario */
     box-shadow: inset 0px -10px 10px -5px rgba(0, 0, 0, 0.589);
 
     max-height: 60vw;
-    padding-top: 10vw;
+    padding-top: 5vw;
     padding-bottom: 1rem;
 }
 header img { /* Imagem do Logo no Header*/
     display: block;
 
-    width: 20rem;
+    width: 55rem;
 
     margin: auto;
 }
@@ -137,21 +137,17 @@ header img { /* Imagem do Logo no Header*/
     
     padding-top: 1vh;
 
-    height: calc(15vw + 30px);
+    height: 20vw;
 }
 #Menu h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--text-color-titulo3);
-}
-.bloco-menu p {
-    color: var(--text-color-cabeçario2);
-    font-size: 2vw;
 }
 .bloco-menu { /* configurações da caixa do menu*/
     width: 200px;
-    height: 2vw;
+    height: 10vw;
     
-    margin: 10px auto;
+    margin: 40px auto;
 }
 #Menu a { /* configuração do botão cardapio*/
 
@@ -160,10 +156,10 @@ header img { /* Imagem do Logo no Header*/
 
     color: var(--text-color-cabeçario);
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 5vw;
     font-weight: bold;
 
-    padding: 1vw;
+    padding: 1vw 4vw;
 }
 #Menu article { /* espaçamento do botão */
     padding-bottom: 3vw;
@@ -218,7 +214,6 @@ a.com{ /* configurações dos botões de link*/
 #img-gal { /* rolagem separada */
     height: 50vw;
     overflow-y: auto;
-
 }
 #Galeria h1 { /* configuração de titulo */
     color: var(--text-color-titulo3);
@@ -235,10 +230,10 @@ a.com{ /* configurações dos botões de link*/
     text-align: center;
     
     margin-top: 3vw;
-    margin-left: 2rem;
+    margin-left: 2vw;
     width: 30vw;
-}
 
+}
 
 #SMap { /* configurações aréa mapa */
     background-color: var(--background-color3);
@@ -306,8 +301,8 @@ footer h2{
         padding-top: 2rem;
     }
     header img { /* ajustes do logo no header */ 
-        padding-top: 8%;
-        width: 15rem;
+        padding-bottom: 8%;
+        width: 30rem;
     }
 
     #Autalizações { /* ajustes na aréa atualizações */
@@ -407,10 +402,11 @@ footer h2{
     header { /* ajustes na aréa header*/
         height: 13rem;
 
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
     header img { /* ajustes na aréa header*/
-        width: 9rem;
+        width: 20rem;
+        margin-bottom: 10vw;    
     }
 
     #Autalizações { /* ajustes na aréa atualizações */
