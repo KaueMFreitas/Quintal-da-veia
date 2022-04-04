@@ -360,7 +360,7 @@ footer h2{
         height: 80vw;
     }
     #img-gal {
-        margin: 0px 5vw;
+        margin-left: 5vw;
     }
     #Galeria img{ /* ajustes nas imagens */
         width: 25vw;
