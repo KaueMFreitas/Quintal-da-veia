@@ -172,6 +172,12 @@ nav { /* configurações */
         height: 8vw;
     }
     #button a{
+        font-size: 4vw;
+    }
+    #button.bnav {
+        gap: 2.5px;
+    }
+    #button.bnav a {
         font-size: 3vw;
     }
     

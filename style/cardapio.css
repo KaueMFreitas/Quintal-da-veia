@@ -192,8 +192,18 @@ header h1 {
 
 }
 @media only screen and (max-width: 500px) {
+    header {
+        height: 350px;
+    }
+    header h1 {
+        padding-top: 10rem;
+    }
+    
     #Chopp h1 {
         font-size: 3rem;
+    }
+    #cozinha h1 {
+        font-size: 4rem;
     }
     #bloco {
         margin-left: 5vw;
