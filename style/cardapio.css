@@ -13,8 +13,6 @@
     --background-color5: #823B00;
     --background-color6: rgb(104, 104, 104);
 
-    --nav-cor: #4b2303;
-
     --alert: rgba(255, 0, 0, 0.753);
 
     --text-color-titulo: rgb(0, 0, 0);
@@ -32,6 +30,7 @@
 
 * {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 /* configurações globais */
@@ -46,7 +45,7 @@ header { /* configuração padrão do header */
 
     box-shadow: inset 0px -10px 15px -10px black;
 
-    height: 300px;
+    height: 450px;
 }
 hr {
     background-color:black;
@@ -137,6 +136,7 @@ li { /* configuração padrão das listas*/
     height: 1px;
 }
 
+/* bar */
 
 /* header */
 header h1 {
@@ -145,14 +145,12 @@ header h1 {
     text-align: center;
 
     font-size: 6rem;
-    padding-top: 7rem;
+    padding-top: 12rem;
 }
 #bar {
     background-image: url(../imagem/bar.jpg);
 }
 
-
-/* Chopp */
 #canec {
     color: var(--alert);
 }
@@ -165,10 +163,9 @@ header h1 {
 }
 #cozinha h1 {
     font-size: 6rem;
-    padding-top: 7rem;
 }
 
-#feijo {
+#feijao {
     padding-top: 25px;
     color: var(--alert);
     font-size: 1.6rem;
@@ -177,7 +174,6 @@ header h1 {
     color: var(--alert);
     font-size: 1.5rem;
 }
-
 
 @media only screen and (max-width: 755px) {
     
@@ -196,7 +192,6 @@ header h1 {
 
 }
 @media only screen and (max-width: 500px) {
-    
     #Chopp h1 {
         font-size: 3rem;
     }

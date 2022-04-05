@@ -16,6 +16,7 @@
     --logo-cor: #F56E00;
 
     --nav-cor:  #692F00;
+    --nav-cor2: #4b2303;
 
     --scroll: #f56e00;
 
@@ -37,6 +38,45 @@
     border-radius: 5px;
 }
 
+/* segunda nav */
+#parts {
+    display: flex;
+    position: fixed;
+    top: 60px;
+
+    box-shadow: inset 0px -10px 20px -5px rgba(0, 0, 0, 0.308), 0px -10px 20px -5px rgba(0, 0, 0, 0.068);
+
+
+    background-color: var(--nav-cor2);
+    
+    height: 4vw;
+    width: 100%;
+    
+    justify-content: space-between;
+    align-items: center;
+    
+    text-shadow: var(--contorno);
+    z-index: 999;
+}
+#button {
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
+    list-style: none;
+}
+#button a{
+    display: block;
+    padding: .5rem;
+
+    color: var(--text-cor);
+    font-family: var(--font);
+    text-decoration: none;
+    font-size: 3vh;
+
+    overflow-y: auto;
+}
+
+
 /* navegação */ 
 nav { /* configurações */
     display: flex;
@@ -55,6 +95,7 @@ nav { /* configurações */
     align-items: center;
     
     text-shadow: var(--contorno);
+    z-index: 1000;
 }
 
 #logo { /* configurações do logo */
@@ -126,6 +167,13 @@ nav { /* configurações */
         margin: 0 1rem;   
         border-bottom: 1px solid rgba(0, 0, 0, 0.295) ;
     } 
+
+    #parts {
+        height: 8vw;
+    }
+    #button a{
+        font-size: 3vw;
+    }
     
     #nav.active #menu {
         height: calc(100vh - 60px);  
@@ -148,6 +196,7 @@ nav { /* configurações */
     }
 
     #icon {
+        color: var(--scroll);
         border-top: 2px solid;
         width: 20px;
         transition: all ease-in-out .5s;
