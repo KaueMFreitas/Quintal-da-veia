@@ -59,6 +59,7 @@ h1 {
 p {
     font-family: var(--font-padrao);
 }
+
 .container { /* configuração padrão de caixas */
     display: flex;
 
@@ -75,9 +76,9 @@ header { /* Configurações do cabeçario */
 
     box-shadow: inset 0px -10px 10px -5px rgba(0, 0, 0, 0.589);
 
-    max-height: 60vw;
-    padding-top: 5vw;
-    padding-bottom: 1rem;
+    height: 500px;
+    padding-top: 1vw;
+    padding-bottom: 2rem;
 }
 header img { /* Imagem do Logo no Header*/
     display: block;
@@ -87,18 +88,18 @@ header img { /* Imagem do Logo no Header*/
     margin: auto;
 }
 
-#Autalizações { /* configurações aréa atualizações*/
+#Atualizações { /* configurações aréa atualizações*/
     background-color: var(--background-color1);
 
     padding: 10px 0px 0px ;
 
-    height: 30vw;
+    height: 25rem;
 }
 #atual { /* rolagem lateral */
     overflow-y: auto;
-    height: 20vw;
+    height: 15rem;
 }
-#Autalizações h1, h2 { /* configuração de Titulo*/
+#Atualizações h1, h2 { /* configuração de Titulo*/
     color: var(--text-color-titulo);
     font-size: 4vw;
 
@@ -106,7 +107,7 @@ header img { /* Imagem do Logo no Header*/
 
     margin-top: 1vw;
 }
-#Autalizações h1 {
+#Atualizações h1 {
     color: var(--text-color-titulo3);
 }
 .bloco { /*Cofigurações da caixa de atualizações*/
@@ -116,13 +117,13 @@ header img { /* Imagem do Logo no Header*/
     margin: 30px auto;
 }
 .bloco h2 { /* Titulo das caixas atualização*/
-    font-size: 3vh;
+    font-size: 2em;
 
     margin: 10px 0px;
 }
 .bloco p { /* Configuração de texto das caixas */
     text-align: center;
-    font-size: 3vh;
+    font-size: 2em;
     color: var(--text-color-cabeçario2);
 
     padding: 0px 10px 5px;
@@ -136,7 +137,7 @@ header img { /* Imagem do Logo no Header*/
     
     padding-top: 1vh;
 
-    height: 20vw;
+    height: 15rem;
 }
 #Menu h1 {
     font-size: 3rem;
@@ -172,13 +173,13 @@ header img { /* Imagem do Logo no Header*/
     
     padding: 20px 0px 5px;
     
-    height: 50vw;
+    height: 40rem;
 }
 a.com{ /* configurações dos botões de link*/
     padding: 10px;
 
-    margin-top: 20px;
-    margin-right: 60px;
+    margin-top: 50vh;
+    margin-right: auto;
 
     color: var(--text-color-cabeçario);
 
@@ -187,31 +188,43 @@ a.com{ /* configurações dos botões de link*/
 }
 #Depoimentos h1 {
     color: var(--text-color-titulo3);
+    font-size: 4em;
+}
+#Depoimentos h4 {
+    font-size: 2.5em;
+}
+#CDepoimento { /* ajustes de scroll */
+    height: 26rem;
+    overflow-y: auto;
+
+    margin-bottom: 1.5rem;
 }
 .bloco-depo { /* configurações da caixa do depoimentos */
-    width: 40vh;
+    width: 65vh;
     
-    padding-bottom: 5px;
+    padding-bottom: 5;
     margin: 5px auto;
 }
 .bloco-depo p { /* ajustes de cabeçario*/
     overflow-y: auto;
-    height: 27vw;
+    height: 20rem;
+    width: 30vw;
 
     color: var(--text-color-cabeçario2);
+    font-size: 2em;
 
     margin: 15px auto;
 }
 
 
 #Galeria { /* configurações aréa galeria*/
-    height: 70vw;
+    height: 55rem;
     width: 100%;
 
     background-color: var(--background-color5);
 }
 #img-gal { /* rolagem separada */
-    height: 50vw;
+    height: 35rem;
     overflow-y: auto;
 }
 #Galeria h1 { /* configuração de titulo */
@@ -228,9 +241,9 @@ a.com{ /* configurações dos botões de link*/
 
     text-align: center;
     
-    margin-top: 3vw;
-    margin-left: 2vw;
-    width: 30vw;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 25rem;
 
 }
 
@@ -281,7 +294,7 @@ footer { /* configurações aréa roda pé */
     margin-top: auto;
     margin-right: auto;
 
-    height: 50vh;
+    height: auto;
 }
 footer h2{
     color: var(--text-color-titulo3);
@@ -297,6 +310,7 @@ footer h2{
 /*  aréa de resposividade media */
 @media only screen and (max-width: 755px) {
     header { /* ajustes do header */
+        height: 300px;
         padding-top: 2rem;
     }
     header img { /* ajustes do logo no header */ 
@@ -304,19 +318,25 @@ footer h2{
         width: 30rem;
     }
 
-    #Autalizações { /* ajustes na aréa atualizações */
-        height: 15rem;
+    #Atualizações { /* ajustes na aréa atualizações */
+        height: 30rem;
     }
-    #Autalizações > h1 {
-        font-size: 2rem;
+    #Atualizações > h1 {
+        font-size: 2.5rem;
     }
     #atual { /* ajuste da rolagem lateral de atualizações */
         overflow-y: auto;
-        height: 10rem;
+        height: 40vh;
+    }
+    .bloco h2 { /* Titulo das caixas atualização*/
+        font-size: 1.5em;
+    }
+    .bloco p { /* Configuração de texto das caixas */
+        font-size: 1.3em;
     }
     .bloco { /*ajuste da caixa de atualizações*/
         width: 100vh;
-        height: 20px;
+        height: 10vh;
         
         margin: 30px auto;
     }
@@ -339,31 +359,40 @@ footer h2{
 
     
     #Depoimentos { /* ajustes aréa depoimentos */
-        height: 75vw;
+        height: 50vh;
     }
     #CDepoimento { /* ajustes de scroll */
         overflow-y: auto;
-        height: 55vw;
+        height: 30vh;
+    }
+    #Depoimentos h1 {
+        font-size: 2.5em;
+    }
+    #Depoimentos h4 {
+        font-size: 1.5em;
     }
     .bloco-depo  { /* ajustes do tamanho dos depoimentos */
-        width: 31vh;
+        width: 35vh;
     }
     .bloco-depo > p { /* ajustes do tamanho dos textos */
         overflow-y: auto;
-        height: 40vw;
+        height: 40vh;
+        width: 20vh;
+        font-size: 2vh;
     }
     a.com {
         font-size: 1.4rem;
     }
 
     #Galeria { /* ajustes do tamanho da aréa */
-        height: 80vw;
+        height: 30rem;
     }
     #img-gal {
-        margin-left: 5vw;
+        height: 20rem;
+        margin-left: 4vh;
     }
     #Galeria img{ /* ajustes nas imagens */
-        width: 25vw;
+        width: 10rem;
         margin-left: .6rem;
     }
 
@@ -399,29 +428,30 @@ footer h2{
 /*  aréa de resposividade pequena*/
 @media only screen and (max-width: 400px) {
     header { /* ajustes na aréa header*/
-        height: 13rem;
-
-        padding-top: 2rem;
+        height: 200px;
+        padding-top: 15vw;
     }
     header img { /* ajustes na aréa header*/
-        width: 20rem;
-        margin-bottom: 10vw;    
+        width: 250px;  
     }
 
-    #Autalizações { /* ajustes na aréa atualizações */
-        height: 15rem;
+    #Atualizações { /* ajustes na aréa atualizações */
+        height: 250px;
     }
-    #Autalizações > h1 {
-        font-size: 6vw;
+    #Atualizações > h1 {
+        font-size: 6vh;
+    }
+    #Atualizações .container .bloco {
+        margin: 30px .7px;
     }
     #atual p {
-        font-size: 4vw;
+        font-size: 2.5vh;
     }
     #atual h2 {
-        font-size: 4vw;
+        font-size: 3vh;
     }
     #atual {
-        height: 12rem;
+        height: 10rem;
         overflow-y: auto;
     }
     .bloco { /* ajustes na divisorias */
@@ -432,43 +462,44 @@ footer h2{
 
 
     #Menu { /* ajustes do tamanho em menu */
-        height: 18rem;
+        height: 270px;
     }
     .bloco-menu { /* ajustes na margin */
-        margin-bottom: 2rem;
-    }
-    #Menu article { /* ajustes no padding */
-        padding-bottom: 2.5rem;
+        margin-bottom: 1vw;
     }
     #Menu h1 { /* ajuste de tamanho */
-        font-size: 8vw;
-    }
-    .bloco-menu p { /* ajuste de tamanho */
-        font-size: 1rem;
+        font-size: 8vh;
     }
     #Menu a { /* ajuste de tamanho do botão cardapio*/
         font-size: 1.5rem;
     }
 
     #Depoimentos { /* ajustes na aréa depoimentos */
+        height: 15rem;
         padding-top: 10px;
     }
     #CDepoimento { /* ajustes de scroll */
-        height: 45vw;
+        height: 8rem;
         overflow-y: auto;
 
         margin-bottom: 1.5rem;
     }
     .bloco-depo { /* ajuste na divitoria do bloco */ 
         width: 170px;
-        height: 150px;
+        height: 10rem;
         
-        padding-top: 10px;
-        margin: 20px auto;
-
+        padding-top: 5vh;
+        margin: 5px auto;
+    }
+    #Depoimentos h1 {
+        font-size: 2.5em;
+    }
+    #Depoimentos h4 {
+        font-size: 1.5em;
     }
     .bloco-depo > p { /* ajustes nos texto dos paragrafos */
-        height: 140px;
+        margin: 20px auto;
+        height: 7rem;
         width: 170px;
     }
     a.com {
@@ -478,16 +509,19 @@ footer h2{
     }
 
 
-    #galeria { /* ajustes da area galeria */
-        height: 40vh;
+    /* ajustes da area galeria */
+    #Galeria {
+        height: 40rem;
     }
     #img-gal {
-        margin-left: 3vw;
+        height: 34rem;
+        margin-left: 1vh;
     }
     #Galeria img{ /* ajustes nas imagens */
-        width: 25vw;
-        margin-left: 1rem;
-        margin-bottom: 5vw;
+        width: 20vh;
+        margin-top: .5rem;
+        margin-left: .5rem;
+        margin-bottom: 5vh;
     }
 
     #SMap { /* ajustes na aréa mapa */

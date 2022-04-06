@@ -49,7 +49,7 @@
 
     background-color: var(--nav-cor2);
     
-    height: 4vw;
+    height: 3rem;
     width: 100%;
     
     justify-content: space-between;
@@ -71,7 +71,7 @@
     color: var(--text-cor);
     font-family: var(--font);
     text-decoration: none;
-    font-size: 3vh;
+    font-size: 1em;
 
     overflow-y: auto;
 }
@@ -98,13 +98,15 @@ nav { /* configurações */
     z-index: 1000;
 }
 
-#logo { /* configurações do logo */
-    font-size: 1.5em;
+#logo a{ /* configurações do logo */
+    font-size: 1.3em;
     font-weight: bold;
+    text-align: center;
+    text-decoration: none;
     
     color: var(--logo-cor);
     
-    padding-left: 30px;
+    padding-left: 10px;
 
     font-family: var(--font-logo);
 }
@@ -119,6 +121,7 @@ nav { /* configurações */
 #menu a { /* configurações do botão */
     display: block;
     padding: .5rem;
+    font-size: 1em;
 
     color: var(--text-cor);
     font-family: var(--font);
