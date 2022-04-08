@@ -76,6 +76,23 @@
     overflow-y: auto;
 }
 
+#Marca {
+    width: 100%;
+    height: auto;
+
+    background-color: black;
+
+    text-align: center;
+}
+#Marca p, a{
+    color: white;
+
+    font-size: 1vw;
+}
+#Marca a {
+    text-decoration: none;
+    padding: 0 5px;
+}~
 
 /* navegação */ 
 nav { /* configurações */

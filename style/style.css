@@ -305,6 +305,25 @@ footer h2{
     
     margin: 0px auto;
     width: 20vw;
+    padding-bottom: 10px;
+}
+
+#Marca {
+    width: 100%;
+    height: auto;
+
+    background-color: black;
+
+    text-align: center;
+}
+#Marca p, a{
+    color: white;
+
+    font-size: 1vw;
+}
+#Marca a {
+    text-decoration: none;
+    padding: 0 5px;
 }
 
 /*  aréa de resposividade media */
