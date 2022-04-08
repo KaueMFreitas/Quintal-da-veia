@@ -13,18 +13,18 @@
 
 :root { /* Variaveis */
 
-    --background-color1: #BA5400;
-    --background-color2: #B55100;
-    --background-color3: #A14800;
-    --background-color4: #3B1A00;
-    --background-color5: #823B00;
+    --background-color1: #964B00;
+    --background-color2: #964B00;
+    --background-color3: #964B00;
+    --background-color4: #633200;
+    --background-color5: #633200;
     --background-color6: rgb(104, 104, 104);
 
-    --text-color-titulo: rgb(0, 0, 0);
+    --text-color-titulo: rgb(0, 0, 0); 
     --text-color-titulo2: rgb(255, 255, 255);
-    --text-color-titulo3: #F56E00;
+    --text-color-titulo3: #E37100;
 
-    --text-color-cabeçario: #F56E00;
+    --text-color-cabeçario: #E37100;
     --text-color-cabeçario2: white;
 
     --font-padrao: 'Ubuntu', sans-serif;
@@ -248,7 +248,7 @@ a.com{ /* configurações dos botões de link*/
 }
 
 #SMap { /* configurações aréa mapa */
-    background-color: var(--background-color3);
+    background-color: var(--background-color4);
 
     height: 26rem;
 }

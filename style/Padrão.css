@@ -13,10 +13,10 @@
 
 :root { /* variaveis */
     --text-cor: white;
-    --logo-cor: #F56E00;
+    --logo-cor: #E37100;
 
-    --nav-cor:  #692F00;
-    --nav-cor2: #4b2303;
+    --nav-cor: #964B00;
+    --nav-cor2:  #633200;
 
     --scroll: #f56e00;
 
@@ -92,7 +92,7 @@
 #Marca a {
     text-decoration: none;
     padding: 0 5px;
-}~
+}
 
 /* navegação */ 
 nav { /* configurações */
